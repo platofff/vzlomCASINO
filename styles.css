@@ -1,3 +1,7 @@
+body {
+    background: no-repeat center center cover;
+}
+
 #window {
     max-width: 98vw;
     width: 400px;
