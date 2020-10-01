@@ -1,0 +1,17 @@
+#window {
+    max-width: 98vw;
+    width: 400px;
+    background-color: rgb(95, 158, 160);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.text {
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: 700;
+}
+
+.btn {
+    width: 48%;
+}
