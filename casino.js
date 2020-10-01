@@ -16,9 +16,10 @@ const yes = () => {
         _window.style.backgroundSize = '400px'
         document.body.style.backgroundImage = "url('image.png')"
         document.body.style.backgroundSize = '100vw'
-        document.getElementById('website').textContent = 'bondage gay website'
-        for (let currency in document.getElementsByClassName('currency'))
-            currency.textContent = 'bucks'
+        document.getElementById('website').textContent = 'Bondage gay website'
+        let currency = document.getElementsByClassName('currency')
+        for (let i = 0; i < currency.length; i++)
+            currency.item(i).textContent = 'bucks'
         document.getElementById('target').textContent = ' fisting ass'
     }
     if (percentage < 100) {
