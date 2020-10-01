@@ -16,6 +16,10 @@ const yes = () => {
         _window.style.backgroundSize = '400px'
         document.body.style.backgroundImage = "url('image.png')"
         document.body.style.backgroundSize = '100vw'
+        document.getElementById('website').textContent = 'bondage gay website'
+        for (let currency in document.getElementsByClassName('currency'))
+            currency.textContent = 'bucks'
+        document.getElementById('target').textContent = ' fisting ass'
     }
     if (percentage < 100) {
         progress.setAttribute('aria-valuenow', percentage)
