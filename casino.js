@@ -8,18 +8,10 @@ const screamPercentage = Math.floor(Math.random() * 85) + 15
 document.getElementById('tRoubles').innerText = tRoubles
 let cRoubles = document.getElementById('cRoubles')
 
-const scream = new Screamer({
-    'title': 'УДАЛЯЙ СТРАНИЧКУ!',
-    'body': 'ЛИНУКС ТОП ВИНДА СОСАТЬ!!!!!!!',
-    'fade': 1000,
-    'icon': 'image.png'
-})
-
-
 const yes = () => {
     percentage += 1
     if (percentage == screamPercentage) {
-        scream.notify()
+        document.getElementById('window').style.backgroundImage = "url('image.png')"
     }
     if (percentage < 100) {
         progress.setAttribute('aria-valuenow', percentage)
