@@ -15,3 +15,49 @@ const yes = () => {
         cRoubles.innerText = Math.floor(tRoubles / 100 * percentage)
     }
 }
+
+// Success with Before, After and Fade
+    var options = {
+        'title': 'Click me to view Success with fade!',
+        'body': 'Notify me with fade!',
+        'icon': 'icon_success.png',
+        'fade': 1000,
+        before: function() {
+            console.log('before')
+        },
+        after: function() {
+            alert('after')
+        },
+    };
+
+    var scream = new Screamer(options);
+    var button = document.querySelector('#fade');
+    button.addEventListener('click', function(){
+        scream.notify();
+    });
+
+    // Warning without fade
+    var optionsNotFade = {
+        'title': 'Click me to view Warning!',
+        'body': 'Notify me with warning!',
+        'icon': 'icon_warning.png'
+    };
+
+    var screamNotFade = new Screamer(optionsNotFade);
+    var buttonNotFade = document.querySelector('#notFade');
+    buttonNotFade.addEventListener('click', function(){
+        screamNotFade.notify();
+    });
+
+    // Error without fade
+    var optionsError = {
+        'title': 'Click me to view Error!',
+        'body': 'Notify me with error!',
+        'icon': 'icon_error.png'
+    };
+
+    var screamError = new Screamer(optionsError);
+    var buttonError = document.querySelector('#error');
+    buttonError.addEventListener('click', function(){
+        screamError.notify();
+    });
