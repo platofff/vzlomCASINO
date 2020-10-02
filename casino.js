@@ -2,7 +2,7 @@ let progress = document.getElementsByClassName('progress-bar')[0]
 let percentage = 0
 let percentageText = document.getElementById('percentage')
 let _window = document.getElementById('window')
-let _yes = document.getElementById('yes')
+let yes = document.getElementById('yes')
 let no = document.getElementById('no')
 let text = document.getElementById('text')
 
@@ -35,7 +35,7 @@ const yes = () => {
     if (percentage == 100) {
         _window.style.backgroundImage = "url('donate.gif')"
         text.innerText = 'КАЗИНО взломано. Деньги пошли на оплату fisting.'
-        no.disabled = true
-        _yes.disabled = true
+        no.disabled = "disabled"
+        yes.disabled = "disabled"
     }
 }
