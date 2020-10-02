@@ -1,2 +1,4 @@
 # vzlomCASINO
-Классический взлом казино
+Мужской взлом казино.
+
+https://platofff.github.io/vzlomCASINO/
