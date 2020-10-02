@@ -30,6 +30,6 @@ const yes = () => {
         percentageText.innerText = p
         cRoubles.innerText = Math.floor(tRoubles / 100 * percentage)
     } else {
-        
+        _window.style.backgroundImage = "url('donate.gif')"
     }
 }
