@@ -30,7 +30,6 @@ const yes = () => {
         percentageText.innerText = p
         cRoubles.innerText = Math.floor(tRoubles / 100 * percentage)
     } else {
-        body.innerHTML = '<iframe id="youtube" src="https://www.youtube.com/embed/dNw4PwVYzSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-        document.getElementById('youtube').requestFullscreen()
+        
     }
 }
