@@ -1,17 +1,16 @@
 let progress = document.getElementsByClassName('progress-bar')[0]
-let percentage = 0
 let percentageText = document.getElementById('percentage')
 let _window = document.getElementById('window')
 let _yes = document.getElementById('yes')
 let no = document.getElementById('no')
 let text = document.getElementById('text')
-
-const tRoubles = Math.floor(Math.random() * 50000000) + 50000000
-const screamPercentage = Math.floor(Math.random() * 85) + 15
-
-document.getElementById('tRoubles').innerText = tRoubles
 let cRoubles = document.getElementById('cRoubles')
+
+let percentage = 0
 let p = '0%'
+const tRoubles = Math.floor(Math.random() * 50000000) + 50000000
+document.getElementById('tRoubles').innerText = tRoubles
+const screamPercentage = Math.floor(Math.random() * 85) + 15
 
 const yes = () => {
     percentage += 1
