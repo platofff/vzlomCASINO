@@ -10,7 +10,7 @@ let percentage = 0
 let p = '0%'
 const tRoubles = Math.floor(Math.random() * 50000000) + 50000000
 document.getElementById('tRoubles').innerText = tRoubles
-const gachiPercentage = Math.floor(Math.random() * 85) + 15
+const gachiPercentage = Math.floor(Math.random() * 84) + 15
 
 const yes = () => {
     percentage += 1
