@@ -16,9 +16,9 @@ let p = '0%'
 const yes = () => {
     percentage += 1
     if (percentage == screamPercentage) {
-        _window.style.backgroundImage = "url('image.png')"
+        _window.style.backgroundImage = "url('image.webp')"
         _window.style.backgroundSize = '400px'
-        document.body.style.backgroundImage = "url('image.png')"
+        document.body.style.backgroundImage = "url('image.webp')"
         document.body.style.backgroundSize = '100vw'
         document.getElementById('website').textContent = 'Bondage gay website'
         let currency = document.getElementsByClassName('currency')
