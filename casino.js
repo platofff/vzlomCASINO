@@ -33,7 +33,7 @@ const yes = () => {
     percentageText.innerText = p
     cRoubles.innerText = Math.floor(tRoubles / 100 * percentage)
     if (percentage == 100) {
-        _window.style.backgroundImage = "url('donate.gif')"
+        _window.style.backgroundImage = "url('donate.webp')"
         text.innerText = 'КАЗИНО взломано. Деньги пошли на оплату fisting.'
         no.disabled = "disabled"
         _yes.disabled = "disabled"
