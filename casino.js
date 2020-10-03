@@ -10,6 +10,7 @@ let yesBtn = document.getElementById('yes')
 let noBtn = document.getElementById('no')
 let text = document.getElementById('text')
 let cRoubles = document.getElementById('cRoubles')
+let composition = document.getElementById('composition')
 
 let percentage = 0
 let p = '0%'
@@ -20,7 +21,11 @@ const gachiPercentage = Math.floor(Math.random() * 84) + 15
 const yes = () => {
     percentage += 1
     if (percentage == gachiPercentage) {
-        _window.style.backgroundImage = `url('${donate.src}')`
+        let audio = document.getElementById('youtube-audio')
+        audio.hidden = false
+        audio.click()
+        composition.hidden = false
+        _window.style.backgroundImage = `url('${image.src}')`
         document.body.style.backgroundImage = `url('${image.src}')`
         document.getElementById('website').textContent = 'Bondage gay website'
         let currency = document.getElementsByClassName('currency')
@@ -35,7 +40,7 @@ const yes = () => {
     percentageText.innerText = p
     cRoubles.innerText = Math.floor(tRoubles / 100 * percentage)
     if (percentage == 100) {
-        _window.style.backgroundImage = "url('donate.webp')"
+        _window.style.backgroundImage = `url('${donate.src}')`
         text.innerText = 'КАЗИНО взломано. Деньги пошли на оплату fisting.'
         noBtn.disabled = 'disabled'
         yesBtn.disabled = 'disabled'

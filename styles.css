@@ -18,6 +18,27 @@ body {
     font-weight: 700;
 }
 
+#youtube-audio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.3vw;
+    background-color: rgba(105, 105, 105, 0.5);
+    border-radius: 10px;
+    display: flex;
+}
+
+#youtube-icon {
+    right: 0;
+    bottom: 0;
+    width: 5vw;
+}
+
+#composition {
+    overflow-wrap: break-word;
+    width: 10vw;
+}
+
 .btn {
     width: 48%;
     margin-left: 3px;
