@@ -1,12 +1,14 @@
 body {
-    background: no-repeat center center cover;
+    background-size: 100vw;
 }
 
 #window {
     max-width: 98vw;
     width: 400px;
+    background-size: 400px;
     background-color: rgb(95, 158, 160);
     padding: 10px;
+    margin-top: 1vh;
     border-radius: 10px;
 }
 
@@ -18,4 +20,6 @@ body {
 
 .btn {
     width: 48%;
+    margin-left: 3px;
+    margin:right: 3px;
 }

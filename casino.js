@@ -1,3 +1,8 @@
+let image = new Image()
+image.src = 'image.webp'
+let donate = new Image()
+donate.src = 'donate.webp'
+
 let progress = document.getElementsByClassName('progress-bar')[0]
 let percentageText = document.getElementById('percentage')
 let _window = document.getElementById('window')
@@ -15,10 +20,8 @@ const gachiPercentage = Math.floor(Math.random() * 84) + 15
 const yes = () => {
     percentage += 1
     if (percentage == gachiPercentage) {
-        _window.style.backgroundImage = "url('image.webp')"
-        _window.style.backgroundSize = '400px'
-        document.body.style.backgroundImage = "url('image.webp')"
-        document.body.style.backgroundSize = '100vw'
+        _window.style.backgroundImage = `url('${donate.src}')`
+        document.body.style.backgroundImage = `url('${image.src}')`
         document.getElementById('website').textContent = 'Bondage gay website'
         let currency = document.getElementsByClassName('currency')
         for (let i = 0; i < currency.length; i++)
