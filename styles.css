@@ -31,12 +31,12 @@ body {
 #youtube-icon {
     right: 0;
     bottom: 0;
-    width: 5vw;
 }
 
 #composition {
     overflow-wrap: break-word;
-    width: 10vw;
+    width: 20vw;
+    min-width: 200px;
 }
 
 .btn {
