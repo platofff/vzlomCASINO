@@ -18,7 +18,7 @@ body {
     font-weight: 700;
 }
 
-#youtube-audio {
+#audio {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -26,11 +26,7 @@ body {
     background-color: rgba(105, 105, 105, 0.5);
     border-radius: 10px;
     display: flex;
-}
-
-#youtube-icon {
-    right: 0;
-    bottom: 0;
+    flex-direction: column;
 }
 
 #composition {
@@ -39,8 +35,16 @@ body {
     min-width: 200px;
 }
 
+#media-control {
+    text-align: center;
+}
+
 .btn {
     width: 48%;
     margin-left: 3px;
-    margin:right: 3px;
+}
+
+.media-button {
+    cursor: pointer;
+    user-select: none;
 }
