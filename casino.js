@@ -83,8 +83,8 @@ const forward = () => {
     playsNow.innerHTML = Object.keys(audioFiles)[audioI]
 }
 
-for (let i = 0; i < audioFiles.length; i++) {
-    Object.values(audioFiles)[i].onended = forward
+for (const a of Object.values(audioFiles)) {
+    a.onended = forward
 }
 
 const back = () => {
