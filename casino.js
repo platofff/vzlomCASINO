@@ -77,7 +77,7 @@ const forward = () => {
     const a = Object.values(audioFiles)[audioI]
     a.pause()
     a.currentTime = 0
-    audioI = audioI === audioFiles.length - 1 ? 0 : audioI + 1
+    audioI = audioI === Object.keys(audioFiles).length - 1 ? 0 : audioI + 1
     if (playPause.textContent === '⏸')
         Object.values(audioFiles)[audioI].play()
     playsNow.innerHTML = Object.keys(audioFiles)[audioI]
